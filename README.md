@@ -40,7 +40,7 @@ ToDo-App/
 
 ## 📸 Screenshots
 
-Add your project screenshots in the `screenshots` folder and display them here.
+
 
 ### Home Page
 
