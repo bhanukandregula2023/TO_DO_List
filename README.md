@@ -159,15 +159,13 @@ The layout automatically adjusts using CSS Flexbox and Media Queries.
 
 ![Task Completed](screenshots/Screenshot3.png)
 
-
 ### Mobile View
 
-> Add your mobile screenshot here.
+![Mobile View](screenshots/mobile view.png)
 
-```
-screenshots/mobile.png
-```
+### Tablet View
 
+![Tablet View](screenshots/Tablet view.png)
 ---
 
 ## 🎯 Future Improvements
@@ -202,11 +200,7 @@ Through this project, I gained hands-on experience with:
 
 **Bhanu Priyanka**
 
----
 
-## ⭐ If you like this project
-
-Please consider giving this repository a ⭐ on GitHub.
 
 
 
