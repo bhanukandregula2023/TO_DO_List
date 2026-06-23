@@ -44,15 +44,15 @@ ToDo-App/
 
 ### Home Page
 
-![Home Page](screenshots/screenshot1.png)
+![Home Page](screenshots/Screenshot1.png)
 
 ### Task Added
 
-![Task Added](screenshots/screenshot2.png)
+![Task Added](screenshots/Screenshot2.png)
 
 ### Task Completed
 
-![Task Completed](screenshots/screenshot3.png)
+![Task Completed](screenshots/Screenshot3.png)
 
 ## 🎯 Learning Outcomes
 
