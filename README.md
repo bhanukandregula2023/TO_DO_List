@@ -165,7 +165,7 @@ The layout automatically adjusts using CSS Flexbox and Media Queries.
 
 ### Tablet View
 
-![Tablet View](screenshots/Tabletview.png)
+![Tablet View](screenshots/tabletview.png)
 
 
 ---
