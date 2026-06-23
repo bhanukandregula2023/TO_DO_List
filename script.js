@@ -16,10 +16,24 @@ const saveEdit = document.getElementById("saveEdit");
 const cancelEdit = document.getElementById("cancelEdit");
 
 let currentEditIndex = -1;
-let tasks = [];
+let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+function saveTasks(){
+
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+
+}
+
 
 addBtn.addEventListener("click", addTask);
+taskInput.addEventListener("keypress", function(event){
 
+    if(event.key === "Enter"){
+
+        addTask();
+
+    }
+
+});
 searchInput.addEventListener("keyup", displayTasks);
 
 function addTask(){
@@ -39,6 +53,7 @@ function addTask(){
         completed:false
 
     });
+    saveTasks();
 
     taskInput.value="";
 
@@ -100,7 +115,7 @@ function displayTasks(){
 function toggleTask(index){
 
     tasks[index].completed=!tasks[index].completed;
-
+    saveTasks();
     displayTasks();
 
 }
@@ -123,7 +138,7 @@ saveEdit.addEventListener("click", () => {
     if(newTask !== ""){
 
         tasks[currentEditIndex].name = newTask;
-
+        saveTasks();
         displayTasks();
     }
 
@@ -140,7 +155,7 @@ cancelEdit.addEventListener("click", () => {
 function deleteTask(index){
 
     tasks.splice(index,1);
-
+    saveTasks();
     displayTasks();
 
 }
@@ -158,3 +173,6 @@ function updateCounter(){
     pendingTasks.innerText=total-completed;
 
 }
+
+
+displayTasks();
